@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Accessibility modes controlled via root classes */
+html.a11y-dyslexia body,
+html.a11y-dyslexia input,
+html.a11y-dyslexia button,
+html.a11y-dyslexia td,
+html.a11y-dyslexia th {
+  letter-spacing: 0.045em;
+  word-spacing: 0.14em;
+  line-height: 1.75;
+}
+
+html.a11y-text-lg {
+  font-size: 112%;
+}
+
+html.a11y-text-xl {
+  font-size: 125%;
+}
+
+html.a11y-high-contrast body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html.a11y-high-contrast .hc-surface {
+  background-color: #ffffff !important;
+  border-color: #0f172a !important;
+  color: #000000 !important;
+}
+
+html.a11y-high-contrast .hc-muted {
+  color: #1e293b !important;
+}
+
+html.a11y-reduced-motion *,
+html.a11y-reduced-motion *::before,
+html.a11y-reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Tableur CM1 — Cours Google Sheets",
+  "description": "Cours interactif sur Google Sheets pour les élèves de CM1 : découverte des cellules, tableaux de devoirs et d'activités, formules simples, accessibilité renforcée et respect strict du RGPD sans collecte de données personnelles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -104,7 +104,7 @@ export function CourseWelcome({
         <div className="lg:col-span-5 flex flex-col justify-between gap-4 bg-slate-50 border border-slate-200 rounded-xl p-5 hc-surface">
           <div className="relative aspect-square max-h-[260px] w-full mx-auto rounded-xl overflow-hidden bg-[#F8FAFC] border border-slate-200 flex items-center justify-center">
             <img
-              src="/src/assets/images/cm1_grid_mascot_1795406505579.jpg"
+              src={`${import.meta.env.BASE_URL}cm1_grid_mascot_1795406505579.jpg`}
               alt="Chouette mascotte de l'atelier tableur CM1 devant un tableau coloré"
               referrerPolicy="no-referrer"
               className="w-full h-full object-contain"
